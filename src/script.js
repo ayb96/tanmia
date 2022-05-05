@@ -88,7 +88,7 @@ gsap.to(".news-container-sec22", {
     // toggleActions : play pause resume restart reset complete none
     toggleActions: "play pause reverse complete",
   },
-  y: -60,
+  y: -40,
   // ease: "none",
   duration: 3,
 });
