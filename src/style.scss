@@ -156,7 +156,11 @@
     background-color: white;
     flex-direction: row-reverse;
     .stat-container2-box1 {
-      // justify-self: flex-end;
+      background-color: #b59434;
+      color: white;
+      background-image: url("/static/arrow-up-right-svgrepo-com.svg");
+      background-repeat: no-repeat;
+
       width: 3.3rem;
       height: 3.3rem;
       margin-left: auto;
@@ -534,15 +538,14 @@
           background-color: rgba(0, 0, 0, 0.247);
         }
         .news-styleBox {
-          max-width: 10rem;
-          min-height: 10rem;
+          width: 10rem;
+          height: 10rem;
           // border: 1px red dashed;
           position: absolute;
-          background: transparent url("/static/ellipse8452.png") 0% 0% no-repeat
-            padding-box;
+          background: url("/static/ellipse8452.png") 0% 0% no-repeat padding-box;
           top: -2rem;
           right: -2.5rem;
-          z-index: -1;
+          z-index: -12;
         }
         .new-image1 {
           font-size: 2rem;
