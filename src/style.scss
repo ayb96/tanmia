@@ -627,6 +627,23 @@
       }
     }
   }
+  .swiper {
+    .news-container-sec1 {
+      .news-container-box2 {
+        display: none;
+      }
+    }
+    .swiper-button-next {
+      // position: absolute;
+      // top: 2rem;
+      left: 3.5rem;
+    }
+    .swiper-button-prev {
+      // position: absolute;
+      // top: 2rem;
+      left: 1rem;
+    }
+  }
 }
 
 .flip-flip {

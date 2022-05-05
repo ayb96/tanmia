@@ -669,6 +669,15 @@
     margin: auto;
     left: 0rem;
   }
+  .swiper .news-container-sec1 .news-container-box2 {
+    display: none;
+  }
+  .swiper .swiper-button-next {
+    left: 3.5rem;
+  }
+  .swiper .swiper-button-prev {
+    left: 1rem;
+  }
 }
 
 .flip-flip {
