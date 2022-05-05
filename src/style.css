@@ -5,8 +5,7 @@
 }
 
 .header-main {
-  min-height: 9rem;
-  border: 2px red solid;
+  min-height: 8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,10 +16,6 @@
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-}
-
-.header-main .header-main-sec1 {
-  border: 1px red solid;
 }
 
 .header-main .header-main-sec1 .header-icon {
@@ -38,44 +33,45 @@
           justify-content: space-evenly;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  border: 1px red solid;
 }
 
 .header-main .navbar-section .nav-sec1 {
   color: #a7a7a7;
-  font-size: 1rem;
+  font-size: 1.3rem;
   text-align: right;
   margin: 0 2rem 0 2rem;
 }
 
 .header-main .navbar-section .nav-sec2 {
   color: #a7a7a7;
-  font-size: 1rem;
+  font-size: 1.3rem;
   margin: 0 2rem 0 2rem;
   text-align: right;
 }
 
 .header-main .navbar-section .nav-sec3 {
   color: #a7a7a7;
-  font-size: 1rem;
+  font-size: 1.3rem;
   margin: 0 2rem 0 2rem;
   text-align: right;
 }
 
 .header-main .navbar-section .nav-sec4 {
-  font-size: 1rem;
+  font-size: 1.3rem;
   margin: 0 2rem 0 2rem;
   font-weight: bold;
   text-align: right;
 }
 
 .header-main .header-main-sec3 {
-  border: 1px red solid;
-  width: 200px;
-  height: 80px;
+  width: 10rem;
+  height: 4.5rem;
 }
 
 .Statistics .stat-container1 {
+  opacity: 1;
+  -webkit-transform: 1s opacity;
+          transform: 1s opacity;
   margin-left: auto;
   background-image: url("/static/stat.jpg");
   /* Set a specific height */
@@ -88,7 +84,6 @@
   z-index: 1;
   width: 90%;
   min-height: 35rem;
-  border: 3px solid #e7b4dc;
   position: relative;
 }
 
@@ -104,7 +99,6 @@
 .Statistics .stat-container1 .stat-container1-com {
   max-width: 35rem;
   margin-right: 3.5rem;
-  border: #4f8000 6px dotted;
   position: absolute;
   z-index: 3;
   top: 50%;
@@ -114,14 +108,12 @@
 }
 
 .Statistics .stat-container1 .stat-container1-com .stat-container1-com1 {
-  border: #000 solid 1px;
   text-align: right;
   font-size: 2.5rem;
   color: #ffffff;
 }
 
 .Statistics .stat-container1 .stat-container1-com .stat-container1-com2 {
-  border: #000 solid 1px;
   text-align: right;
   font-size: 1.2rem;
   color: #ffffff;
@@ -137,7 +129,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: #000 solid 1px;
   padding: 0.4rem;
   width: 6rem;
   background-color: #01563c;
@@ -155,7 +146,6 @@
   bottom: 10rem;
   max-width: 45rem;
   min-height: 20rem;
-  border: #001780 dotted 3px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -170,7 +160,6 @@
   width: 3.3rem;
   height: 3.3rem;
   margin-left: auto;
-  border: 2px #9dff00 solid;
 }
 
 .Statistics .stat-container2 .stat-container2-box2 {
@@ -179,7 +168,6 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  border: green dotted 2px;
   max-width: 34rem;
   margin-top: auto;
   margin-top: 3.8rem;
@@ -190,11 +178,9 @@
   width: 10rem;
   height: 8rem;
   padding: 0.5rem;
-  border: 1px blue solid;
 }
 
 .Statistics .stat-container2 .stat-container2-box2 .stat-container2-common .stat-container2-common1 {
-  border: 2px lime solid;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -209,17 +195,14 @@
 .Statistics .stat-container2 .stat-container2-box2 .stat-container2-common .stat-container2-common1 .stat-num {
   font-size: 2.5rem;
   font-weight: bold;
-  border: 1px #1900ff solid;
 }
 
 .Statistics .stat-container2 .stat-container2-box2 .stat-container2-common .stat-container2-common1 .plus-sign {
   color: #b59434;
   font-size: 2rem;
-  border: 1px red solid;
 }
 
 .Statistics .stat-container2 .stat-container2-box2 .stat-container2-common .stat-info {
-  border: #01563c 2px solid;
   text-align: right;
   margin-top: 0.5rem;
   color: #5a5a5a;
@@ -239,7 +222,6 @@
 }
 
 .footer .footer1 {
-  border: red solid 2px;
   min-height: 18rem;
   background: #01563c 0% 0% no-repeat padding-box;
   -webkit-box-pack: center;
@@ -258,10 +240,6 @@
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-.footer .footer1 .footer-main .footer11 {
-  border: #0d0080 solid 1px;
 }
 
 .footer .footer1 .footer-main .footer11 .footer11-info .footer11-info3 {
@@ -330,6 +308,7 @@
   width: 0.75rem;
   height: 1.063rem;
   text-align: right;
+  background: transparent url("/static/footer-logo.png") 0% 0% no-repeat padding-box;
 }
 
 .footer .footer1 .footer-main .footer11 .footer11-info .footer11-info1 div:nth-child(2) {
@@ -351,7 +330,6 @@
 }
 
 .footer .footer1 .footer-main .footer12 {
-  border: 1px green solid;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -368,7 +346,6 @@
 
 .footer .footer1 .footer-main .footer12 .footer12-box1 {
   color: #d9d9d9;
-  border: 2px green dotted;
 }
 
 .footer .footer1 .footer-main .footer12 .footer12-box1 h2 {
@@ -422,14 +399,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 1px red solid;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.news-container .news-container-box {
-  border: 1px #2f00ff solid;
 }
 
 .news-container .news-container-box .news-container-sec1 {
@@ -445,7 +417,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  border: green solid 2px;
+  margin-bottom: 2rem;
 }
 
 .news-container .news-container-box .news-container-sec1 .news-container-box1 {
@@ -486,7 +458,6 @@
 
 .news-container .news-container-box .news-container-sec2 .news-container-sec21 {
   max-width: 45rem;
-  border: 1px red solid;
   padding: 3rem 5rem 3rem 5rem;
   background-color: #f3f3f3;
 }
@@ -542,7 +513,6 @@
   margin-bottom: auto;
   position: relative;
   left: -3rem;
-  border: 1px #0400ff dotted;
   background: transparent url("/static/news.jpeg") 0% 0% no-repeat padding-box;
   background-size: cover;
 }
@@ -560,7 +530,6 @@
 .news-container .news-container-box .news-container-sec2 .news-container-sec22 .news-styleBox {
   max-width: 10rem;
   min-height: 10rem;
-  border: 1px red dashed;
   position: absolute;
   background: transparent url("/static/ellipse8452.png") 0% 0% no-repeat padding-box;
   top: -2rem;
@@ -571,7 +540,6 @@
 .news-container .news-container-box .news-container-sec2 .news-container-sec22 .new-image1 {
   font-size: 2rem;
   z-index: 3;
-  border: 4px red solid;
   max-width: 24rem;
   padding: 1rem;
   position: relative;
@@ -582,7 +550,6 @@
 }
 
 .news-container .news-container-box .news-container-sec2 .news-container-sec22 .new-image2 {
-  border: 1px #1100ff solid;
   z-index: 3;
   width: 17rem;
   color: #d9d9d9;
@@ -593,7 +560,6 @@
 }
 
 .news-container .news-container-box .news-container-sec2 .news-container-sec22 .new-image3 {
-  border: 1px #00ff6a solid;
   width: 17rem;
   margin-left: auto;
   text-align: right;
@@ -602,6 +568,78 @@
   z-index: 3;
   margin-top: 4rem;
   color: #ffffff;
+}
+
+.swiper {
+  border: 1px red solid;
+  position: relative;
+}
+
+.swiper .news-container-sec1 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
+
+.swiper .news-container-sec1 .news-container-box1 {
+  font-size: 1.5rem;
+  color: #b59434;
+}
+
+.swiper .news-container-sec1 .news-container-box2 {
+  width: 55%;
+  border-bottom: 2px #7b7b7b solid;
+}
+
+.swiper .news-container-sec1 .news-container-box3 {
+  font-size: 3rem;
+  position: relative;
+}
+
+.swiper .news-container-sec1 .news-container-box3 .news-circle {
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+  right: 0px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background: #b5953491;
+}
+
+.swiper .news-container-sec1 .news-container-box3 .news-container-box31 {
+  text-align: right;
+}
+
+.swiper .swiper-button-next {
+  position: absolute;
+  top: 2rem;
+  left: 9rem;
+}
+
+.swiper .swiper-button-prev {
+  position: absolute;
+  top: 2rem;
+  left: 6.5rem;
+}
+
+.slider {
+  width: 80%;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 @media only screen and (max-width: 1115px) {
@@ -631,5 +669,116 @@
     margin: auto;
     left: 0rem;
   }
+}
+
+.flip-flip {
+  background-color: black;
+  overflow: hidden;
+  height: 300px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50%;
+  width: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  border: #b59434 solid 1px;
+}
+
+.container.grid,
+.container.columns {
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.letter {
+  text-align: center;
+  color: black;
+  font-size: 60px;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container.grid .letter {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.container.columns .letter {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.for,
+.gsap {
+  font-size: 5vmax;
+  color: white;
+}
+
+.for {
+  padding: 2px 1.6vmax;
+  font-weight: 300;
+  display: none;
+}
+
+.gsap {
+  padding: 2px 0;
+  font-weight: 600;
+  display: none;
+}
+
+.container.final .for,
+.container.final .gsap {
+  display: block;
+}
+
+.F {
+  background: rgba(0, 188, 212, 0.7);
+}
+
+.l {
+  background: rgba(40, 150, 255, 0.7);
+}
+
+.i {
+  background: rgba(153, 80, 220, 0.7);
+}
+
+.p {
+  background: rgba(90, 108, 225, 0.7);
+}
+
+.container.plain .letter {
+  background: transparent;
+  color: white;
+  padding: 0;
+}
+
+.logo {
+  position: fixed;
+  width: 60px;
+  bottom: 20px;
+  right: 30px;
 }
 /*# sourceMappingURL=style.css.map */
