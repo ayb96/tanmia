@@ -289,12 +289,14 @@
           }
         }
         .footer11-image {
-          // background: transparent url("../Images/Group 204.svg") 0% 0% no-repeat
-          //   padding-box;
+          // background: transparent  0% 0%
+          //   no-repeat padding-box;
+          background-image: url("/static/footerlogo.png");
           width: 13.75rem;
           height: 5.5rem;
-          position: relative;
-          top: -2.375rem;
+          background-size: cover;
+          // position: relative;
+          // top: -2.375rem;
         }
         .footer11-image:hover {
           cursor: pointer;

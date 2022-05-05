@@ -319,10 +319,10 @@
 }
 
 .footer .footer1 .footer-main .footer11 .footer11-image {
+  background-image: url("/static/footerlogo.png");
   width: 13.75rem;
   height: 5.5rem;
-  position: relative;
-  top: -2.375rem;
+  background-size: cover;
 }
 
 .footer .footer1 .footer-main .footer11 .footer11-image:hover {
