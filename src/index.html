@@ -34,7 +34,7 @@
 
       .swiper {
         width: 100%;
-        height: 100%;
+        height: 150%;
         margin-left: auto;
         margin-right: auto;
       }
@@ -484,6 +484,7 @@
     <!-- Statitics -->
 
     <div class="Statistics">
+      <div class="stat-back-main"></div>
       <div class="stat-container1">
         <div class="stat-overlay"></div>
         <div class="stat-container1-com">
@@ -553,6 +554,11 @@
             <div class="stat-info">حالة تمت دراستها اجتماعيا واقتصاديا</div>
           </div>
         </div>
+      </div>
+      <div class="stat-container3">
+        <div class="stat-container31"><i class="fa-brands fa-facebook-f footer-icon"></i></div>
+        <div class="stat-container32"><i class="fa-brands fa-twitter footer-icon"></i></div>
+        <div class="stat-container33"><i class="fa-brands fa-instagram footer-icon"></i></div>
       </div>
     </div>
 
@@ -751,8 +757,20 @@
     <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper(".mySwiper", {
-        // slidesPerView: 3,
-        slidesPerView: window.innerWidth > 768 ? 3 : 3,
+        slidesPerView: 1,
+        spaceBetween: 10,
+        breakpoints: {
+          600: {
+            slidesPerView: 2,
+            spaceBetween: 8,
+          },
+          960: {
+            slidesPerView: 3,
+            spaceBetween: 8,
+          },
+        },
+        // slidesPerView: window.innerWidth > 768 ? 3 : 3,
+
         grid: {
           rows: 2,
         },
