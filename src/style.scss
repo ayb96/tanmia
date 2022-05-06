@@ -18,6 +18,40 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
 
+  .navbar-links {
+    .home {
+      color: #e41c26;
+    }
+    ul {
+      display: flex;
+      li {
+        list-style: none;
+        a {
+          text-decoration: none;
+          color: #111111;
+          padding: 1rem;
+          display: block;
+          font: var(--unnamed-font-style-normal) normal
+            var(--unnamed-font-weight-normal) var(--unnamed-font-size-16) /
+            var(--unnamed-line-spacing-21) Futura;
+          letter-spacing: var(--unnamed-character-spacing-0);
+
+          font: normal normal normal 1rem Futura;
+          letter-spacing: 0rem;
+          color: #000000;
+          text-transform: uppercase;
+        }
+      }
+      li:hover {
+        background-color: #5e5e5e;
+        transition: 1s;
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+
   .header-main-sec1 {
     // border: 1px red solid;
 
@@ -883,4 +917,28 @@ body {
   right: 30px;
 }
 
-// swpier
+@media screen and (max-width: 43.75rem) {
+  .header-main {
+    .navbar-links {
+      display: none;
+    }
+    .navbar {
+      flex-direction: column-reverse;
+      align-items: flex-end;
+    }
+    .navbar-links {
+      width: 100%;
+      ul {
+        border: white solid 0.063rem;
+        flex-direction: column;
+        width: 100%;
+      }
+      li {
+        text-align: center;
+      }
+    }
+    .navbar-links.active {
+      display: flex;
+    }
+  }
+}

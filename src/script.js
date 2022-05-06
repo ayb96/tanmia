@@ -52,7 +52,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
     // gsap.delayedCall(curLayout === 0 ? 3.5 : 1.5, nextState);
     // gsap.pause();
   }
-  nextState()
+  nextState();
   // gsap.delayedCall(1, nextState);
 });
 
@@ -135,3 +135,8 @@ function wew() {
     updateCount();
   });
 }
+
+const burgerButton = document.querySelector(".burger-button");
+burgerButton = document.addEventListener("burger-button", () => {
+  console.log();
+});
