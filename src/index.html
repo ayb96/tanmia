@@ -15,7 +15,6 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-    <!-- Demo styles -->
     <style>
       html,
       body {
@@ -23,27 +22,25 @@
         height: 100%;
       }
 
-      body {
-        background: #eee;
-        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-        font-size: 14px;
-        color: #000;
-        margin: 0;
-        padding: 0;
-      }
-
       .swiper {
         width: 100%;
-        height: 120%;
-        margin-left: auto;
-        margin-right: auto;
+        height: 100%;
       }
-
+      /* .swiper-slier-1 {
+       
+        width: 100%;
+        height: 100%;
+        background-image: url("/static/stat.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      } */
       .swiper-slide {
         text-align: center;
+        width: 100%;
+        height: 100%;
         font-size: 18px;
-        background: #fff;
-        height: calc((80% - 30px) / 2) !important;
+        /* background: rgb(112, 23, 23); */
+        /* border: 2px red solid; */
 
         /* Center slide text vertically */
         display: -webkit-box;
@@ -59,6 +56,13 @@
         -webkit-align-items: center;
         align-items: center;
       }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     </style>
     <title>Tanmia</title>
   </head>
@@ -66,11 +70,13 @@
     <!-- Header -->
     <div class="header-main">
       <div class="header-main-sec1">
-        <div class="burger-button"><i class="fa-solid fa-bars header-icon"></i></div>
+        <div class="burger-button">
+          <i class="fa-solid fa-bars header-icon"></i>
+        </div>
 
         <i class="fa-solid fa-magnifying-glass header-icon"></i>
       </div>
-      <div class="navbar-links">
+      <!-- <div class="navbar-links">
         <ul>
           <li>
             <a href="#" className="home"> HOME </a>
@@ -88,16 +94,14 @@
             <a href="#">FAQ</a>
           </li>
         </ul>
-      </div>
-      <!-- <div class="navbar-section">
+      </div> -->
+      <div class="navbar-section">
         <div class="nav-sec1 nav-common">المتابعة الاجتماعية</div>
         <div class="nav-sec2 nav-common">المشاريع التنموية</div>
         <div class="nav-sec3 nav-common">عن تنمية</div>
         <div class="nav-sec4 nav-common">الرئيسية</div>
-      </div> -->
-      <div class="header-main-sec3">
-        <!-- <img src="/static/logo.svg" /> -->
       </div>
+      <div class="header-main-sec3"></div>
     </div>
 
     <!-- Statitics -->
@@ -105,30 +109,142 @@
     <div class="Statistics">
       <div class="stat-back-main"></div>
       <div class="stat-container1">
-        <div class="stat-overlay"></div>
-        <div class="stat-container1-com">
-          <div class="stat-container1-com1">
-            تنمية مجتمعات عازمة على بناء مستقبلها والاستفادة من الفرص التنموية
-          </div>
-          <div class="stat-container1-com2">
-            حرصاً من قيادتنا الرشيدة على الإنسان وتنميته تم إنشاء البرنامج
-            الوطني للتنمية المجتمعية في المناطق "تنمية"، وذلك لدعم وتمكين
-            المجتمعات المستفيدة الواقعة ضمن نطاق المشروعات التنموية لتحقيق تنمية
-            مستدامة وللارتقاء بالمجتمعات وبناء مستقبلها، وذلك بالتعاون مع
-            الشركاء الاستراتيجيين من الجهات الحكومية والخاصة
-          </div>
-          <div class="stat-container1-com3">
-            <div class="stat-container1-com31">
-              <i class="fa-solid fa-arrow-left"></i>
+        <div
+          style="width: 100%; height: 35rem; border: 2px rgb(0, 204, 255) solid"
+        >
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div
+                class="swiper-slide swiper-slier-1"
+                style="
+                background-color: red;
+                  background-image: url(/static/stat.jpg);
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                "
+              >
+                <div class="stat-container1-com">
+                  <div class="stat-container1-com1">
+                    تنمية مجتمعات عازمة على بناء مستقبلها والاستفادة من الفرص
+                    التنموية
+                  </div>
+                  <div class="stat-container1-com2">
+                    حرصاً من قيادتنا الرشيدة على الإنسان وتنميته تم إنشاء
+                    البرنامج الوطني للتنمية المجتمعية في المناطق "تنمية"، وذلك
+                    لدعم وتمكين المجتمعات المستفيدة الواقعة ضمن نطاق المشروعات
+                    التنموية لتحقيق تنمية مستدامة وللارتقاء بالمجتمعات وبناء
+                    مستقبلها، وذلك بالتعاون مع الشركاء الاستراتيجيين من الجهات
+                    الحكومية والخاصة
+                  </div>
+                  <div class="stat-container1-com3">
+                    <div class="stat-container1-com31">
+                      <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                    <div class="stat-container1-com32">تعرف اكثر</div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-slide"
+                style="background-color: rgb(255, 0, 191)"
+              >
+                <div class="stat-container1-com">
+                  <div class="stat-container1-com1">
+                    تنمية مجتمعات عازمة على بناء مستقبلها والاستفادة من الفرص
+                    التنموية
+                  </div>
+                  <div class="stat-container1-com2">
+                    حرصاً من قيادتنا الرشيدة على الإنسان وتنميته تم إنشاء
+                    البرنامج الوطني للتنمية المجتمعية في المناطق "تنمية"، وذلك
+                    لدعم وتمكين المجتمعات المستفيدة الواقعة ضمن نطاق المشروعات
+                    التنموية لتحقيق تنمية مستدامة وللارتقاء بالمجتمعات وبناء
+                    مستقبلها، وذلك بالتعاون مع الشركاء الاستراتيجيين من الجهات
+                    الحكومية والخاصة
+                  </div>
+                  <div class="stat-container1-com3">
+                    <div class="stat-container1-com31">
+                      <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                    <div class="stat-container1-com32">تعرف اكثر</div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-slide"
+                style="background-color: rgb(255, 0, 140)"
+              >
+                <div class="stat-container1-com">
+                  <div class="stat-container1-com1">
+                    تنمية مجتمعات عازمة على بناء مستقبلها والاستفادة من الفرص
+                    التنموية
+                  </div>
+                  <div class="stat-container1-com2">
+                    حرصاً من قيادتنا الرشيدة على الإنسان وتنميته تم إنشاء
+                    البرنامج الوطني للتنمية المجتمعية في المناطق "تنمية"، وذلك
+                    لدعم وتمكين المجتمعات المستفيدة الواقعة ضمن نطاق المشروعات
+                    التنموية لتحقيق تنمية مستدامة وللارتقاء بالمجتمعات وبناء
+                    مستقبلها، وذلك بالتعاون مع الشركاء الاستراتيجيين من الجهات
+                    الحكومية والخاصة
+                  </div>
+                  <div class="stat-container1-com3">
+                    <div class="stat-container1-com31">
+                      <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                    <div class="stat-container1-com32">تعرف اكثر</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="stat-container1-com">
+                  <div class="stat-container1-com1">
+                    تنمية مجتمعات عازمة على بناء مستقبلها والاستفادة من الفرص
+                    التنموية
+                  </div>
+                  <div class="stat-container1-com2">
+                    حرصاً من قيادتنا الرشيدة على الإنسان وتنميته تم إنشاء
+                    البرنامج الوطني للتنمية المجتمعية في المناطق "تنمية"، وذلك
+                    لدعم وتمكين المجتمعات المستفيدة الواقعة ضمن نطاق المشروعات
+                    التنموية لتحقيق تنمية مستدامة وللارتقاء بالمجتمعات وبناء
+                    مستقبلها، وذلك بالتعاون مع الشركاء الاستراتيجيين من الجهات
+                    الحكومية والخاصة
+                  </div>
+                  <div class="stat-container1-com3">
+                    <div class="stat-container1-com31">
+                      <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                    <div class="stat-container1-com32">تعرف اكثر</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="stat-container1-com">
+                  <div class="stat-container1-com1">
+                    تنمية مجتمعات عازمة على بناء مستقبلها والاستفادة من الفرص
+                    التنموية
+                  </div>
+                  <div class="stat-container1-com2">
+                    حرصاً من قيادتنا الرشيدة على الإنسان وتنميته تم إنشاء
+                    البرنامج الوطني للتنمية المجتمعية في المناطق "تنمية"، وذلك
+                    لدعم وتمكين المجتمعات المستفيدة الواقعة ضمن نطاق المشروعات
+                    التنموية لتحقيق تنمية مستدامة وللارتقاء بالمجتمعات وبناء
+                    مستقبلها، وذلك بالتعاون مع الشركاء الاستراتيجيين من الجهات
+                    الحكومية والخاصة
+                  </div>
+                  <div class="stat-container1-com3">
+                    <div class="stat-container1-com31">
+                      <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                    <div class="stat-container1-com32">تعرف اكثر</div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="stat-container1-com32">تعرف اكثر</div>
           </div>
         </div>
+        <!-- <div class="stat-overlay"></div> -->
       </div>
       <div class="stat-container2">
-        <div class="stat-container2-box1">
-          <!-- arrow up-right -->
-        </div>
+        <div class="stat-container2-box1"></div>
         <div class="stat-container2-box2">
           <div class="stat-container2-box21 stat-container2-common">
             <div class="stat-container2-common1">
@@ -381,36 +497,39 @@
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        breakpoints: {
-          600: {
-            slidesPerView: 2,
-            spaceBetween: 8,
-          },
-          960: {
-            slidesPerView: 3,
-            spaceBetween: 8,
-          },
-        },
-        // slidesPerView: window.innerWidth > 768 ? 3 : 3,
+      var swiper = new Swiper(".mySwiper", {});
+    </script>
 
-        grid: {
-          rows: 2,
-        },
-        spaceBetween: 30,
-        // pagination: {
-        //   el: ".swiper-pagination",
-        //   clickable: true,
-        // },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
+    <script>
+      // var swiper = new Swiper(".mySwiper", {
+      //   slidesPerView: 1,
+      //   spaceBetween: 10,
+      //   breakpoints: {
+      //     600: {
+      //       slidesPerView: 2,
+      //       spaceBetween: 8,
+      //     },
+      //     960: {
+      //       slidesPerView: 3,
+      //       spaceBetween: 8,
+      //     },
+      //   },
+      //   // slidesPerView: window.innerWidth > 768 ? 3 : 3,
+
+      //   grid: {
+      //     rows: 2,
+      //   },
+      //   spaceBetween: 30,
+      //   // pagination: {
+      //   //   el: ".swiper-pagination",
+      //   //   clickable: true,
+      //   // },
+      //   navigation: {
+      //     nextEl: ".swiper-button-next",
+      //     prevEl: ".swiper-button-prev",
+      //   },
+      // });
     </script>
   </body>
 </html>
