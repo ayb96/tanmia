@@ -447,11 +447,13 @@
           // background: transparent  0% 0%
           //   no-repeat padding-box;
           background-image: url("/static/footerlogo.png");
-          width: 13.75rem;
-          height: 5.5rem;
+          width: 10.75rem;
+          height: 4rem;
           background-size: cover;
           // border: 1px red solid;
-          // position: relative;
+          // justify-self: right;
+          position: relative;
+          left: 3rem;
           // top: -2.375rem;
         }
         .footer11-image:hover {
