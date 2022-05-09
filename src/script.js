@@ -59,7 +59,7 @@ ScrollTrigger.create({
 });
 
 const counters = document.querySelectorAll(".counter");
-const speed = 80;
+const speed = 400;
 setTimeout(wew, 2000);
 function wew() {
   counters.forEach((counter) => {
