@@ -685,25 +685,28 @@
         .new-image1 {
           font-size: 2rem;
           z-index: 3;
-          // border: 4px red solid;
+          // border: 1px red solid;
           max-width: 24rem;
-          padding: 1rem;
+          padding-right: 3rem;
+          padding-top: 3rem;
           position: relative;
           margin-left: auto;
           text-align: right;
           color: #ffffff;
-          margin-right: 2rem;
+          // margin-right: 2rem;
         }
         .new-image2 {
           // border: 1px rgb(17, 0, 255) solid;
           z-index: 3;
           width: 17rem;
+          padding-right: 3rem;
+          padding-top: 1rem;
           color: #d9d9d9;
 
           position: relative;
           margin-left: auto;
           text-align: right;
-          margin-right: 2rem;
+          // margin-right: 2rem;
         }
         .new-image3 {
           // border: 1px rgb(0, 255, 106) solid;
@@ -711,10 +714,11 @@
 
           margin-left: auto;
           text-align: right;
-          margin-right: 2rem;
+          // margin-right: 2rem;
+          padding-right: 3rem;
           position: relative;
           z-index: 3;
-          margin-top: 4rem;
+          margin-top: 3rem;
           color: #ffffff;
         }
       }
