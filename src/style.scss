@@ -371,11 +371,13 @@
     @extend .dFlex;
     justify-content: center;
     .footer-main {
+      // border: red solid 2px;
       display: flex;
       border-bottom: #d9d9d9 1px solid;
       width: 85%;
       justify-content: space-between;
       flex-wrap: wrap;
+      margin-top: 1rem;
       .footer11 {
         // width: 15rem;
         // border: rgb(13, 0, 128) solid 1px;
@@ -599,6 +601,8 @@
         .news-container-info1 {
           .news-container-infoo {
             display: flex;
+            text-align: right;
+            justify-content: space-between;
             // border: rgb(255, 251, 0) 2px dashed;
             max-width: 50rem;
             .news-container-info11 {
