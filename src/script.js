@@ -83,9 +83,67 @@ function wew() {
   });
 }
 
-const burgerButton = document.querySelector(".burger-button");
-burgerButton = document.addEventListener("click", () => {
-  console.log("ghgh");
-  const navbarLinks = document.getElementsByClassName("navbar-links")[0];
-  navbarLinks.classList.toggle("active");
+// const burgerButton = document.querySelector(".burger-button");
+// burgerButton = document.addEventListener("click", () => {
+//   console.log("ghgh");
+//   const navbarLinks = document.getElementsByClassName("navbar-links")[0];S
+//   navbarLinks.classList.toggle("active");
+// });
+
+const timeline1 = gsap.timeline({
+  defaults: {
+    duration: 1,
+    // ease: Back.easeOut.config(2),
+    opacity: 0,
+  },
 });
+timeline1
+  .from(".stat-container1-com", {
+    delay: 1,
+    scaleX:0,
+    transformOrigin: "right",
+  })
+  .from(".stat-container1-com1", {
+    x: -50,
+    transformOrigin: "right",
+    duration: 0.5,
+  })
+  .from(".stat-container1-com2", {
+    x:-50,
+    transformOrigin: "right",
+    duration: 0.5,
+  })
+  .from(".stat-container1-com3", {
+    x:-50,
+    transformOrigin: "right",
+      duration: 0.5,
+  });
+// .from(
+//   ".commonButton",
+//   {
+//     // duration: 1,
+//     y: "+1000%",
+//     delay: 0.2,
+//     stagger: {
+//       each: 0.1,
+//       from: "random",
+//     },
+//   },
+//   "<-0.5"
+// )
+// .fromTo(
+//   ".maxHeightOverlayTitle",
+//   {
+//     opacity: 0,
+//     scale: 0,
+//     rotation: 720,
+//   },
+//   {
+//     // duration: 1,
+//     delay: 1,
+//     opacity: 1,
+//     scale: 1,
+//     rotation: 0,
+//   },
+//   "-.5"
+// );
