@@ -11,6 +11,9 @@
 // }
 
 .header-main {
+  div:hover {
+    cursor: pointer;
+  }
   width: 85%;
   // border: 1px red solid;
   margin: auto;
@@ -60,11 +63,13 @@
     width: 3.5rem;
     justify-content: space-between;
     display: flex;
-
+    .burger-button {
+      display: none;
+    }
     .header-icon {
       color: #01563c;
       font-size: 1.5rem;
-      // padding: 1rem;
+      padding-right: 1rem;
     }
   }
   .navbar-section {
@@ -225,7 +230,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        border: #000 solid 1px;
+        // border: #000 solid 1px;
         margin-top: 1rem;
         padding: 0.6rem;
         font-size: 1.4rem;
@@ -315,8 +320,8 @@
       align-items: center;
       justify-content: center;
       border: 2px solid #01563c;
-      width: 3rem;
-      height: 3rem;
+      width: 2.5rem;
+      height: 2.5rem;
       font-size: 2rem;
       border-radius: 50%;
       color: #01563c;
@@ -328,8 +333,8 @@
       justify-content: center;
       border: 2px solid #01563c;
       color: #01563c;
-      width: 3rem;
-      height: 3rem;
+      width: 2.5rem;
+      height: 2.5rem;
       font-size: 2rem;
       border-radius: 50%;
     }
@@ -340,8 +345,8 @@
       align-items: center;
       justify-content: center;
       border: 2px solid #01563c;
-      width: 3rem;
-      height: 3rem;
+      width: 2.5rem;
+      height: 2.5rem;
       font-size: 2rem;
       border-radius: 50%;
     }
@@ -444,14 +449,12 @@
           }
         }
         .footer11-image {
-          // background: transparent  0% 0%
-          //   no-repeat padding-box;
           background-image: url("/static/footerlogo.png");
           width: 10.75rem;
           height: 4rem;
           background-size: cover;
           // border: 1px red solid;
-          // justify-self: right;
+
           position: relative;
           left: 3rem;
           // top: -2.375rem;
@@ -549,14 +552,19 @@
 
       .news-container-box1 {
         font-size: 2rem;
-
+        // border: red solid 2px;
+        width: 4rem;
         color: #b59434;
       }
       .news-container-box2 {
-        width: 50%;
+        width: 50rem;
         border-bottom: 2px #d9d9d9 solid;
+        // border: red solid 2px;
+        margin-right: 1rem;
+        margin-left: 1rem;
       }
       .news-container-box3 {
+        // border: red solid 2px;
         font-size: 3rem;
         position: relative;
         .news-circle {
@@ -630,7 +638,7 @@
       }
       .news-container-sec22 {
         z-index: 1;
-        width: 35rem;
+        width: 36rem;
         margin-right: 3rem;
 
         min-height: 35rem;
@@ -845,6 +853,17 @@
 // }
 
 @media only screen and (max-width: 1115px) {
+  .header-main {
+    .header-main-sec1 {
+      .burger-button {
+        display: block;
+      }
+    }
+    .navbar-section {
+      display: none;
+    }
+  }
+
   .footer {
     .footer1 {
       .footer-main {
@@ -873,7 +892,10 @@
           margin: auto;
         }
         .news-container-sec22 {
-          width: 85%;
+          .news-styleBox {
+            display: none;
+          }
+          width: 100%;
           margin: auto;
           left: 0rem;
         }
@@ -928,17 +950,25 @@ body {
 
     .news-container-box1 {
       font-size: 2rem;
+      width: 8rem;
+      height: 4rem;
       // margin-bottom: 4rem;
+      // border: red solid 2px;
       color: #b59434;
     }
     .news-container-box2 {
-      width: 50%;
-      // margin-bottom: 4rem;
+      width: 43rem;
+      padding-left: 1rem;
+      padding-left: 1rem;
+      // margin-left: 7rem;
+      // border: red solid 2px;
       border-bottom: 2px #d9d9d9 solid;
     }
     .news-container-box3 {
       font-size: 3rem;
+      // border: red solid 2px;
       // margin-bottom: 4rem;
+
       position: relative;
       .news-circle {
         position: absolute;
@@ -1085,7 +1115,15 @@ body {
 
 .slick-slider {
   // border: 1px red solid;
+
   height: 35rem;
+  .slick-overlay {
+    width: 100%;
+    height: 100%;
+    background: transparent
+      linear-gradient(270deg, #000000 0%, #00000087 46%, #80808000 100%) 0% 0%
+      no-repeat padding-box;
+  }
   .slick-slide1 {
     width: 100%;
     height: 35rem;
