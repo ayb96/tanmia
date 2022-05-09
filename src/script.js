@@ -5,7 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const timeline = gsap.timeline({ defaults: { duration: 1 } });
-gsap.from(".header-main", { y: "-500%", ease: "power4", duration: 2 });
+gsap.from(".header-main", { y: "-500%", ease: "power4", duration: 1 });
 
 // timeline.from(
 //   ".nav-common",
