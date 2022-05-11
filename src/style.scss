@@ -1308,7 +1308,7 @@ $controlSize: 60px;
       }
     }
   }
-&__inner {
+  &__inner {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -1332,8 +1332,9 @@ $controlSize: 60px;
 
   &__content {
     position: absolute;
-    left: 5%;
+    left: 50%;
     top: 50%;
+    transform: translate(-50%, -50%);
     margin-left: $controlSize/-2;
     margin-top: $controlSize * 0.8;
     max-width: 480px;
