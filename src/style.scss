@@ -31,12 +31,10 @@ body {
   src: url("/static/GE Dinar One Medium.otf");
   font-family: Ge-dinar;
 }
-* {
-  font-family: Bahij-regular;
-}
+
 @font-face {
   src: url("/static/Bahij Janna-Regular.ttf");
-  font-family: Bahij-regular;
+  font-family: Bahij;
 }
 
 @font-face {
@@ -94,7 +92,6 @@ body {
   }
 
   .search-button {
-    margin-left: 3.1rem;
   }
 
   .header-main-sec1 {
@@ -329,16 +326,18 @@ body {
   .stat-container2 {
     position: relative;
     z-index: 4;
+    float: left;
     // border: #01563c 2px solid;
     bottom: 10rem;
     max-width: 45rem;
     min-height: 20rem;
     margin-top: 4rem;
+    left: 0;
     font-family: "Bahij";
     // border: rgb(0, 23, 128) dotted 3px;
     display: flex;
     background-color: white;
-    flex-direction: row-reverse;
+
     .stat-container2-box1 {
       background-color: #01563c;
       color: white;
@@ -370,7 +369,7 @@ body {
       margin-left: 2rem;
 
       .stat-container2-common {
-        margin-right: 50px;
+        margin-right: 44px;
 
         .stat-container2-common1 {
           // border: 2px rgb(0, 255, 0) solid;
@@ -482,9 +481,11 @@ body {
         // border: rgb(13, 0, 128) solid 1px;
 
         .footer11-info {
+          margin-right: -10px !important;
           .footer11-info3 {
             display: flex;
             margin-top: 2.813rem;
+
             div {
               margin-right: 1.594rem;
               cursor: pointer;
@@ -564,7 +565,7 @@ body {
           // border: 1px red solid;
 
           position: relative;
-          left: 3rem;
+          margin-right: -10px;
           // top: -2.375rem;
         }
         .footer11-image:hover {
@@ -685,7 +686,7 @@ body {
       .news-container-box3 {
         // border: red solid 2px;
         font-size: 3rem;
-
+        font-family: "Ge-dinar";
         margin-right: 6.3rem;
         position: relative;
         .news-circle {
@@ -711,9 +712,9 @@ body {
       display: flex;
 
       .news-container-sec21 {
-        width: 49rem;
+        width: 51rem;
         // border: 4px rgb(0, 255, 85) solid;
-        padding: 5rem 6% 5rem 7%;
+        padding: 5rem 10% 5rem 6%;
         background-color: #f3f3f37a;
         .news-container-info1 {
           .news-container-infoo {
@@ -786,7 +787,7 @@ body {
         margin-top: 4.5rem;
         margin-bottom: auto;
         position: relative;
-        left: -3rem;
+        left: -4.2rem;
         // border: 1px rgb(4, 0, 255) dotted;
         background: transparent url("/static/mainnews.jpg") 0% 0% no-repeat
           padding-box;
