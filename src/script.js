@@ -25,21 +25,6 @@ gsap.from(".header-main", { y: "-500%", ease: "power4", duration: 1 });
 //     "<-0.1"
 //   );
 
-// gsap.to(".news-container-sec22", {
-//   scrollTrigger: {
-//     trigger: ".news-container-sec22",
-//     start: "top center",
-//     end: "bottom 100px",
-//     // markers: true,
-//     scrub: 2,
-
-//     toggleActions: "play pause reverse complete",
-//   },
-//   y: -40,
-//   // ease: "none",
-//   duration: 3,
-// });
-
 ScrollTrigger.create({
   trigger: ".Statistics",
   start: "450px 100px",
