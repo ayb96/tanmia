@@ -1624,6 +1624,7 @@ html {
   }
 
   .title-wrapper {
+    //  border: 1px red solid;
     position: relative;
     color: white;
     margin-left: auto;
@@ -1634,7 +1635,7 @@ html {
     z-index: 5;
 
     h1 {
-      font-size: 12rem;
+      font-size: 4rem;
       margin: 0;
       line-height: 1;
       margin-bottom: 1rem;
