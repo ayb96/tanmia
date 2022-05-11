@@ -23,6 +23,11 @@ body {
   font-family: Bahij;
 }
 
+@font-face {
+  src: url("/static/Bahij Janna-Bold.ttf");
+  font-family: Bahij-b;
+}
+
 .header-main {
   div:hover {
     cursor: pointer;
@@ -281,7 +286,7 @@ body {
         align-items: center;
         justify-content: center;
         // border: #000 solid 1px;
-        margin-top: 1rem;
+        // margin-top: 3rem;
         padding: 0.6rem;
         font-size: 1.4rem;
         width: 8rem;
@@ -293,8 +298,16 @@ body {
         .stat-container1-com31 {
           margin-right: 5px;
         }
-        // .stat-container1-com32 {
-        // }
+      }
+
+      .stat-container1-com3:hover {
+        background-color: #01563c;
+        color: rgb(255, 255, 255);
+
+        margin: auto;
+        .stat-container1-com31 {
+          margin-right: 5px;
+        }
       }
     }
   }
@@ -305,7 +318,6 @@ body {
     bottom: 10rem;
     max-width: 45rem;
     min-height: 20rem;
-
     margin-top: 4rem;
     font-family: "Bahij";
     // border: rgb(0, 23, 128) dotted 3px;
@@ -321,12 +333,16 @@ body {
       background-size: 70%;
       background-position-x: 70%;
       background-position-y: 25%;
-
       min-width: 3.3rem;
       height: 3.3rem;
       // margin-left: auto;
       // border: 2px rgb(157, 255, 0) solid;
     }
+
+    .stat-container2-box1:hover {
+      cursor: pointer;
+    }
+
     .stat-container2-box2 {
       display: flex;
       flex-wrap: wrap;
@@ -362,6 +378,7 @@ body {
           // border: #01563c 2px solid;
           text-align: right;
           margin-top: 0.2rem;
+
           color: #5a5a5a;
         }
 

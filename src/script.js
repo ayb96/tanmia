@@ -100,7 +100,7 @@ const timeline1 = gsap.timeline({
 timeline1
   .from(".stat-container1-com", {
     delay: 1,
-    scaleX:0,
+    scaleX: 0,
     transformOrigin: "right",
   })
   .from(".stat-container1-com1", {
@@ -109,15 +109,30 @@ timeline1
     duration: 0.5,
   })
   .from(".stat-container1-com2", {
-    x:-50,
+    x: -50,
     transformOrigin: "right",
     duration: 0.5,
   })
   .from(".stat-container1-com3", {
-    x:-50,
+    x: -50,
     transformOrigin: "right",
-      duration: 0.5,
+    duration: 0.5,
   });
+
+$(".stat-container2-box1").on("click", function (e) {
+  e.preventDefault();
+
+  //  $('.stat-container2').animate({
+  //   margin-top: '0'
+  //  });
+
+  $(".stat-container2").css("margin-top", 0);
+  $(".stat-container2").css("box-shadow", "0px 0px 30px #fff");
+
+  $(".stat-container2-box27").css("display", "block");
+  $(".stat-container2-box28").css("display", "block");
+});
+
 // .from(
 //   ".commonButton",
 //   {
