@@ -980,7 +980,7 @@ body {
   // border: 2px red solid;
   width: 100%;
   height: 100%;
-  background-image: url("/static/slider3.jpeg");
+  background-image: url("/static/slider4.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1012,7 +1012,7 @@ body {
   // border: 2px red solid;
   width: 100%;
   height: 100%;
-  background-image: url("/static/slider7.jpg");
+  background-image: url("/static/slider6.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1020,7 +1020,7 @@ body {
   // border: 2px red solid;
   width: 100%;
   height: 100%;
-  background-image: url("/static/slider7.jpg");
+  background-image: url("/static/slider6.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1028,7 +1028,7 @@ body {
   // border: 2px red solid;
   width: 100%;
   height: 100%;
-  background-image: url("/static/slider9.jpeg");
+  background-image: url("/static/slider6.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1174,9 +1174,6 @@ body {
   }
 }
 
-
-
-
 //////////////////////////
 
 $numOfSlides: 5;
@@ -1210,7 +1207,7 @@ $controlSize: 60px;
     &--right {
       left: 95%;
     }
-    
+
     &:hover {
       background-color: #2da6ff;
     }
@@ -1254,7 +1251,6 @@ $controlSize: 60px;
       }
 
       .slider__control.a--rotation & {
-
         &:after {
           animation: arrowLineRotation 0.49s;
         }
@@ -1288,7 +1284,7 @@ $controlSize: 60px;
   height: 150vmax;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  transition: clip-path 0s $slidingAT*0.7;
+  transition: clip-path 0s $slidingAT * 0.7;
   clip-path: circle($controlSize/2 at 120vw 50%);
 
   &.s--prev {
@@ -1299,7 +1295,7 @@ $controlSize: 60px;
     z-index: 1;
     transition: clip-path $slidingAT;
     clip-path: circle(120vmax at 120vw 50%);
-    
+
     &.s--active-prev {
       clip-path: circle(120vmax at 30vw 50%);
     }
@@ -1308,12 +1304,11 @@ $controlSize: 60px;
   @for $i from 1 through $numOfSlides {
     &:nth-child(#{$i}) {
       .slide__inner {
-        background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-#{$i+1}.jpg');
+        background-image: url("/static/slider#{$i+1}.jpg");
       }
     }
   }
-
-  &__inner {
+&__inner {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -1322,7 +1317,7 @@ $controlSize: 60px;
     margin-left: -50vw;
     margin-top: -50vh;
     background-size: cover;
-    background-position: center center;
+    // background-position: center center;
 
     &:before {
       content: "";
@@ -1331,7 +1326,7 @@ $controlSize: 60px;
       top: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0,0,0,0.3);
+      background: rgba(0, 0, 0, 0.3);
     }
   }
 
@@ -1340,7 +1335,7 @@ $controlSize: 60px;
     left: 5%;
     top: 50%;
     margin-left: $controlSize/-2;
-    margin-top: $controlSize*0.8;
+    margin-top: $controlSize * 0.8;
     max-width: 480px;
     color: #fff;
   }
