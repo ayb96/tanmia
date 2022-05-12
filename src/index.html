@@ -78,7 +78,7 @@
             left: 0;
             background-repeat: no-repeat;
             opacity: 0.4;
-
+            display: none;
             transform: translate(-50%, -55%);
           "
         ></div>
@@ -144,7 +144,123 @@
 
     <div class="Statistics">
       <div class="stat-container1">
-        <div class="slider-content">
+        <div
+          class="cities slideshow screen-height"
+          data-js="city-slider"
+          data-transition=""
+        >
+          <div class="slideshow-inner">
+            <div class="cities__slider slides">
+              <div class="cities__slide slide is-active">
+                <div class="slide__slide-content">
+                  <span></span>
+                  <h2>
+                    <a href="#Philadelphia"
+                      >حرصاً من قيادتنا الرشيدة على الإنسان وتنميته تم إنشاء
+                      البرنامج الوطني للتنمية المجتمعية في المناطق "تنمية"، وذلك
+                    </a>
+                  </h2>
+                </div>
+                <div class="image-container">
+                  <img
+                    src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs="
+                    data-src="https://i.imgpile.com/n55WEx.jpg"
+                    alt="bracelets-bijoux-createur"
+                    class="image queue-loading as-background"
+                  />
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <filter id="blur">
+                      <feGaussianBlur stdDeviation="3" />
+                    </filter>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="cities__slide slide">
+                <div class="slide__slide-content">
+                  <span></span>
+                  <h2>
+                    <a href="#Philadelphia">Los Angeles</a>
+                  </h2>
+                </div>
+                <div class="image-container">
+                  <img
+                    src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs="
+                    data-src="https://i.imgpile.com/n55WEx.jpg"
+                    alt="bracelets-bijoux-createur"
+                    class="image queue-loading as-background"
+                  />
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <filter id="blur">
+                      <feGaussianBlur stdDeviation="3" />
+                    </filter>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="cities__slide slide">
+                <div class="slide__slide-content">
+                  <span></span>
+                  <h2>
+                    <a href="#Philadelphia">New York</a>
+                  </h2>
+                </div>
+                <div class="image-container">
+                  <img
+                    src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs="
+                    data-src="https://i.imgpile.com/n55WEx.jpg"
+                    alt="bracelets-bijoux-createur"
+                    class="image queue-loading as-background"
+                  />
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <filter id="blur">
+                      <feGaussianBlur stdDeviation="3" />
+                    </filter>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="arrows">
+              <div
+                class="arrow prev"
+                style="opacity: 1; transform: translate3d(0px, 0px, 0px)"
+              >
+                <span class="svg svg-arrow-left">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 30 26"
+                    enable-background="new 0 0 30 26"
+                  >
+                    <path
+                      d="M13 26c-.3 0-.5-.1-.7-.3l-12-12c-.4-.4-.4-1 0-1.4l12-12c.4-.4 1-.4 1.4 0s.4 1 0 1.4l-11.3 11.3 11.3 11.3c.4.4.4 1 0 1.4-.2.2-.4.3-.7.3z"
+                    />
+                    <path class="arrow__line" d="M29.9 13.1h-28.4" />
+                  </svg>
+                </span>
+              </div>
+              <div
+                class="arrow next"
+                style="opacity: 1; transform: translate3d(0px, 0px, 0px)"
+              >
+                <span class="svg svg-arrow-right">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 30 26"
+                    enable-background="new 0 0 30 26"
+                  >
+                    <path
+                      d="M16.9 0c.3 0 .5.1.7.3l12 12c.4.4.4 1 0 1.4l-12 12c-.4.4-1 .4-1.4 0-.4-.4-.4-1 0-1.4l11.3-11.3-11.3-11.3c-.4-.4-.4-1 0-1.4.2-.2.5-.3.7-.3z"
+                    />
+                    <path class="arrow__line" d="M0 12.9h28.5" />
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider-content" style="display: none">
           <!-- <div class="header-wrapper">
             <div class="header">
               <div class="menu-wrapper">
@@ -1238,10 +1354,18 @@
       type="text/javascript"
       src="//code.jquery.com/jquery-1.11.0.min.js"
     ></script>
+
+    <script src="./script.js"></script>
     <script
       type="text/javascript"
       src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
     ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
       integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
