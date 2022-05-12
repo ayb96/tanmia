@@ -2001,7 +2001,6 @@ body {
           // border: #01563c 2px solid;
           text-align: right;
           font-family: "Ge-dinar";
-          
         }
       }
     }
@@ -2186,9 +2185,25 @@ body {
   margin-left: auto;
   margin-right: auto;
   // margin-top: 3rem;
+  border: 1px red solid;
+  padding-top: 3rem;
+  .swiper-slide {
+    transition: 500ms all;
 
+    &:hover {
+      transform: scale(1.1);
+      z-index: 1;
+    }
+
+    // &:first-child:hover {
+    //   margin: 0 40px;
+    // }
+
+    // &:last-child:hover {
+    //   margin: 0 -40px;
+    // }
+  }
   // border: 2px red dashed;
-  
 }
 
 .swiper-slide {
