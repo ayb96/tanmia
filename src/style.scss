@@ -1515,38 +1515,38 @@ body {
     min-height: 35rem;
 
     position: relative;
-    .swiper {
-      width: 150%;
-      height: 120%;
-      border: 1px red solid;
-    }
+    // .swiper {
+    //   width: 150%;
+    //   height: 120%;
+    //   // border: 1px red solid;
+    // }
 
-    .swiper-slide {
-      text-align: center;
-      width: 100%;
-      height: 100%;
-      font-size: 18px;
+    // .swiper-slide {
+    //   text-align: center;
+    //   width: 100%;
+    //   height: 100%;
+    //   font-size: 18px;
 
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
-    }
+    //   display: -webkit-box;
+    //   display: -ms-flexbox;
+    //   display: -webkit-flex;
+    //   display: flex;
+    //   -webkit-box-pack: center;
+    //   -ms-flex-pack: center;
+    //   -webkit-justify-content: center;
+    //   justify-content: center;
+    //   -webkit-box-align: center;
+    //   -ms-flex-align: center;
+    //   -webkit-align-items: center;
+    //   align-items: center;
+    // }
 
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+    // .swiper-slide img {
+    //   display: block;
+    //   width: 100%;
+    //   height: 100%;
+    //   object-fit: cover;
+    // }
     .stat-overlay {
       position: absolute;
       z-index: 2;
@@ -2185,7 +2185,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   // margin-top: 3rem;
-  border: 1px red solid;
+  // border: 1px red solid;
   padding-top: 3rem;
   // .swiper-slide {
   //   transition: 500ms all;

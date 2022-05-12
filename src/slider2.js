@@ -3,7 +3,7 @@ var swiper = new Swiper(".mySwiper", {
   grid: {
     rows: 2,
   },
-  spaceBetween: 30,
+  spaceBetween: 17,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -13,4 +13,4 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
-// swiper.setTransition(this, 4);
+
