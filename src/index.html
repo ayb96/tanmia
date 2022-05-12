@@ -3,6 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <link
       rel="stylesheet"
@@ -34,6 +42,24 @@
     <title>Tanmia</title>
   </head>
   <body>
+    <!-- Popup -->
+    <div class="popup-template">
+      <div class="popup-close" onclick="close_pop()">
+        <ion-icon name="close-outline"></ion-icon>
+      </div>
+      <h1
+        style="
+          color: white;
+          position: absolute;
+          top: 50%;
+          right: 50%;
+          transform: translate(-50%, -50%);
+        "
+      >
+        Popup field
+      </h1>
+    </div>
+
     <!-- Header -->
     <div class="header-main">
       <div class="header-main-sec3"></div>
@@ -1191,15 +1217,15 @@
     </div>
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide swiper-slider1"></div>
-        <div class="swiper-slide swiper-slider2"></div>
-        <div class="swiper-slide swiper-slider3"></div>
-        <div class="swiper-slide swiper-slider4"></div>
-        <div class="swiper-slide swiper-slider5"></div>
-        <div class="swiper-slide swiper-slider6"></div>
-        <div class="swiper-slide swiper-slider7"></div>
-        <div class="swiper-slide swiper-slider8"></div>
-        <div class="swiper-slide swiper-slider9"></div>
+        <div class="swiper-slide swiper-slider1" onclick="open_pop()"></div>
+        <div class="swiper-slide swiper-slider2" onclick="open_pop()"></div>
+        <div class="swiper-slide swiper-slider3" onclick="open_pop()"></div>
+        <div class="swiper-slide swiper-slider4" onclick="open_pop()"></div>
+        <div class="swiper-slide swiper-slider5" onclick="open_pop()"></div>
+        <div class="swiper-slide swiper-slider6" onclick="open_pop()"></div>
+        <div class="swiper-slide swiper-slider7" onclick="open_pop()"></div>
+        <div class="swiper-slide swiper-slider8" onclick="open_pop()"></div>
+        <div class="swiper-slide swiper-slider9" onclick="open_pop()"></div>
       </div>
 
       <!-- <div class="swiper-button-next"></div>
@@ -1364,5 +1390,6 @@
       });
     </script> -->
     <script src="./slider1.js"></script>
+    <script src="./popup.js"></script>
   </body>
 </html>
