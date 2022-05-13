@@ -44,10 +44,51 @@
   <body>
     <!-- Popup -->
     <div class="popup-template">
-      <div class="popup-close" onclick="close_pop()">
-        <ion-icon name="close-outline"></ion-icon>
+      <div class="popup-templateHeader">
+        <div class="popup-templateHeader1"></div>
+        <div class="popup-templateHeader2"></div>
+        <div class="popup-close" onclick="close_pop()"></div>
       </div>
-      <h1
+
+      <div>
+        <div class="swiper-container swiper1">
+          <div class="swiper-wrapper">
+            <!-- <div class="swiper-slide">
+              <div></div>
+            </div> -->
+            <div class="swiper-slide">
+              <div class="swiper-slide7"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide2"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide3"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide4"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide5"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide6"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide7"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide8"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide9"></div>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination swiper-pagination1"></div>
+        </div>
+      </div>
+      <!-- <h1
         style="
           color: white;
           position: absolute;
@@ -57,7 +98,7 @@
         "
       >
         Popup field
-      </h1>
+      </h1> -->
     </div>
 
     <!-- Header -->
@@ -940,7 +981,7 @@
                   الوطني للتنمية المجتمعية في المناطق "تنمية"، وذلك لدعم
                 </div>
 
-                <div class="news-container-info12" style="">
+                <div class="news-container-info12">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="40.369"
@@ -1024,7 +1065,7 @@
                   الوطني للتنمية المجتمعية في المناطق "تنمية"، وذلك لدعم
                 </div>
 
-                <div class="news-container-info12" style="">
+                <div class="news-container-info12">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="40.369"
@@ -1107,7 +1148,7 @@
                   الوطني للتنمية المجتمعية في المناطق "تنمية"، وذلك لدعم
                 </div>
 
-                <div class="news-container-info12" style="">
+                <div class="news-container-info12">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="40.369"
@@ -1294,8 +1335,6 @@
             />
           </svg>
 
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="20"
@@ -1308,8 +1347,8 @@
               d="M25.122,8.3c.018.249.018.5.018.746,0,7.586-5.774,16.327-16.327,16.327A16.217,16.217,0,0,1,0,22.794a11.871,11.871,0,0,0,1.386.071A11.493,11.493,0,0,0,8.51,20.414a5.749,5.749,0,0,1-5.365-3.98,7.237,7.237,0,0,0,1.084.089,6.069,6.069,0,0,0,1.51-.2,5.739,5.739,0,0,1-4.6-5.632v-.071a5.779,5.779,0,0,0,2.594.728A5.747,5.747,0,0,1,1.954,3.678,16.312,16.312,0,0,0,13.787,9.683a6.478,6.478,0,0,1-.142-1.315,5.744,5.744,0,0,1,9.931-3.926,11.3,11.3,0,0,0,3.642-1.386A5.723,5.723,0,0,1,24.7,6.218,11.5,11.5,0,0,0,28,5.33,12.336,12.336,0,0,1,25.122,8.3Z"
               transform="translate(0 -2.629)"
               fill="#fff"
-            /></svg
-          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            />
+          </svg>
 
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -1389,6 +1428,35 @@
         });
       });
     </script> -->
+    <script>
+      var swiper1 = new Swiper(".swiper1", {
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          // when window width is >= 320px
+          400: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          520: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          // when window width is >= 480px
+          780: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          // when window width is >= 640px
+          940: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+        },
+      });
+    </script>
     <script src="./slider1.js"></script>
     <script src="./popup.js"></script>
     <script>
@@ -1402,18 +1470,33 @@
         scale: 1,
         ease: Power4.easeOut,
       });
-      pop.from(
-        ".popup-template h1",
-        {
-          duration: 0.5,
-          opacity: 0,
-          y: 15,
-          stagger: {
-            amount: 0.4,
+      pop
+        .from(
+          ".popup-template h1",
+          {
+            duration: 0.5,
+            opacity: 0,
+            y: 15,
+            stagger: {
+              amount: 0.4,
+            },
           },
-        },
-        "-=.3"
-      );
+          "-=.3"
+        )
+        .from(
+          ".swiper1",
+          {
+            duration: 1,
+            // width:0,
+            opacity:0,
+            // delay: 0.2,
+            stagger: {
+              each: 0.1,
+              from: "random",
+            },
+          },
+          "<-0.5"
+        );
 
       function open_pop() {
         pop.play();
