@@ -1050,13 +1050,15 @@ body {
     will-change: width, left, right;
 
     .slider-content-1 {
-      font-size: 4rem;
-      height: 6rem;
-      width: 40rem;
+      font-size: 5vw;
+      // border: 1px red solid;
+      height: 6vw;
+      width: 50vw;
       overflow: hidden;
       font-family: Ge-dinar;
     }
     .slider-content-2 {
+      // border: 2px rgb(21, 255, 0) solid;
       font-size: 1.2rem;
       height: 6rem;
       width: 35rem;
