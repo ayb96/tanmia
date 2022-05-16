@@ -1044,30 +1044,24 @@ body {
     color: $white-100;
     text-align: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     will-change: width, left, right;
 
-    h2 {
-      display: inline-block;
-      color: $vivid-yellow;
-      // font-family: $font-cervo-regular;
-      font-family: "Bahij";
-      font-size: get-vw(50px);
-      line-height: line-height(260, 260);
-      text-transform: uppercase;
-      margin-bottom: 0;
-      margin-top: 0;
+    .slider-content-1 {
+      font-size: 4rem;
+      height: 6rem;
+      width: 40rem;
       overflow: hidden;
-      position: relative;
-      padding: 0 5%;
-      mix-blend-mode: lighten;
-      will-change: transform, opacity;
-
-      a {
-        display: block;
-        color: $vivid-yellow;
-      }
+      font-family: Ge-dinar;
+    }
+    .slider-content-2 {
+      font-size: 1.2rem;
+      height: 6rem;
+      width: 35rem;
+      font-family: Bahij;
+      overflow: hidden;
     }
   }
 }
@@ -3294,6 +3288,7 @@ html {
 }
 
 .botton-testing {
+  margin-top: 30px;
   width: 100px;
   height: 50px;
   // border: #000000 solid 1px;
@@ -3308,6 +3303,7 @@ html {
   }
   .botton-testing2 {
     margin: auto;
+    color: #000;
     position: absolute;
     display: flex;
     justify-content: center;
