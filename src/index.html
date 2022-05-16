@@ -206,7 +206,13 @@
         </div>
       </div>
     </div>
-
+    <div class="botton-testing">
+      <div class="botton-testing1"></div>
+      <div class="botton-testing2">
+        <div class="botton-testing2Text">تعرف اكثر</div>
+        <div class="botton-testing2Icon"></div>
+      </div>
+    </div>
     <!-- Statitics -->
 
     <div class="Statistics">
@@ -228,6 +234,7 @@
                     </a>
                   </h2>
                 </div>
+
                 <div class="image-container">
                   <img
                     src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs="
@@ -959,7 +966,7 @@
           </div>
         </div>
         <div class="news-container-sec2">
-          <div class="news-container-sec22">
+          <div class="news-container-sec22" style="transition: 1s all ease">
             <div class="linear-new"></div>
             <div class="news-styleBox"></div>
             <div class="new-image1">
@@ -1375,6 +1382,22 @@
       var swiper = new Swiper(".mySwiper", {});
     </script> -->
     <script>
+      var posmain = 0;
+      var elmain = document.querySelector(".news-container-sec22");
+      console.log(elmain);
+      var mmain = 0;
+
+      document.addEventListener(
+        "scroll",
+        function () {
+          elmain.style.transform =
+            "translateY(" + -window.pageYOffset / 30 + "px)";
+          console.log("eerewr");
+        },
+        false
+      );
+    </script>
+    <script>
       var swiper = new Swiper(".mySwiper", {
         slidesPerView: 3.5,
         grid: {
@@ -1488,7 +1511,7 @@
           {
             duration: 1,
             // width:0,
-            opacity:0,
+            opacity: 0,
             // delay: 0.2,
             stagger: {
               each: 0.1,

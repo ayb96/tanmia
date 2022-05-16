@@ -2227,6 +2227,11 @@ body {
   -webkit-align-items: center;
   align-items: center;
 }
+
+.swiper-slide:hover {
+  cursor: pointer;
+}
+
 .swiper-slider1 {
   // border: 2px rgb(98, 0, 255) solid;
   width: 100%;
@@ -2488,10 +2493,6 @@ $grey: #bcbcbc;
 body,
 html {
   background: transparent;
-  // font-size: 6px;
-  // padding: 4rem 2rem;
-  // -webkit-font-smoothing: antialiased;
-  // -moz-osx-font-smoothing: grayscale;
   font-family: "Montserrat", sans-serif;
 
   @media (max-width: 860px) {
@@ -3290,5 +3291,42 @@ html {
     position: absolute;
     top: 2rem;
     left: 2rem;
+  }
+}
+
+.botton-testing {
+  width: 100px;
+  height: 50px;
+  // border: #000000 solid 1px;
+  position: relative;
+  .botton-testing1 {
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    border: #fff solid 1px;
+    top: -7px;
+    left: -7px;
+  }
+  .botton-testing2 {
+    margin: auto;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    // border: #000000 solid 1px;
+    .botton-testing2Text {
+      font-family: Bahij;
+    }
+    .botton-testing2Icon {
+      background-image: url("/static/buttonArrow.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 20px;
+      height: 20px;
+      // border: 1px red solid;
+    }
   }
 }

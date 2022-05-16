@@ -5,8 +5,65 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const timeline = gsap.timeline({ defaults: { duration: 1 } });
-gsap.from(".header-main", { y: "-500%", ease: "power4", duration: 1 });
+// gsap
+//   // .from(".header-main", { y: "-500%", ease: "power4", duration: 1 })
+//   .to(".botton-testing1", {
+//     x: 7,
+//     y: 7,
+//     ease: "power4",
+//     duration: 1,
+//     delay: 2,
+//   });
+// gsap
+//   // .from(".header-main", { y: "-500%", ease: "power4", duration: 1 })
+//   .to(".botton-testing1", {
+//     x: 7,
+//     y: 7,
+//     ease: "power4",
+//     duration: 1,
+//     delay: 2,
+//   });
 
+const sliderButton = gsap.timeline({
+  paused: "true",
+});
+const ewewefw = document.querySelector(".botton-testing");
+ewewefw.addEventListener("mouseenter", () => {
+  console.log("erwerereeg");
+  sliderButton.play();
+});
+ewewefw.addEventListener("mouseleave", () => {
+  console.log("erwerereeg");
+  sliderButton.reverse();
+});
+
+sliderButton.to(".botton-testing1", {
+  x: 7,
+  y: 7,
+  borderColor: "#fff",
+  ease: "power4",
+  duration: 0.5,
+});
+sliderButton.to(
+  ".botton-testing2",
+  {
+    color: "#fff",
+    backgroundColor: "#01563c",
+    ease: "power4",
+    duration: 0.5,
+  },
+  "<0"
+);
+sliderButton.from(
+  ".botton-testing2Icon",
+  {
+    width: 0,
+    ease: "power4",
+    duration: 0.5,
+  },
+  "<0"
+);
+// sliderButton
 // timeline.from(
 //   ".nav-common",
 //   {
