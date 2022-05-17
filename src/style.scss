@@ -1680,7 +1680,7 @@ body {
   align-items: center;
 }
 .footer {
-  margin-top: 3.125rem;
+  margin-top: 7rem;
 
   .footer1 {
     // border: red solid 2px;
@@ -1867,7 +1867,8 @@ body {
 
 .news-container {
   display: flex;
-  margin: auto;
+  // margin: auto;
+  // padding-bottom:3rem;
   // border: 1px rgb(68, 0, 255) solid;
   // justify-content: center;
   .news-container-box {
@@ -1880,14 +1881,15 @@ body {
       justify-content: space-between;
       // border: blue 2px dashed;
       .news-container-box1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         // border: rgb(0, 255, 64) solid 2px;
-        // width: 4rem;
-        color: #b59434;
+
+        color: #01563c;
+        font-family: Bahij;
         margin-left: 4.8rem;
       }
       .news-container-box2 {
-        width: 45rem;
+        width: 40rem;
         border-bottom: 2px #d9d9d9 solid;
         // border: red solid 2px;
 
@@ -1895,11 +1897,12 @@ body {
         margin-left: 1rem;
       }
       .news-container-box3 {
+        
         // border: red solid 2px;
-        font-size: 3rem;
+        font-size: 4rem;
         font-family: "Ge-dinar";
         margin-right: 5.2rem;
-        // margin-right: 6.3rem;
+
         position: relative;
         .news-circle {
           position: absolute;
