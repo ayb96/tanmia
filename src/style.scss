@@ -1556,10 +1556,10 @@ body {
     z-index: 4;
     float: left;
     // border: #01563c 2px solid;
-    bottom: 10rem;
+    bottom: 7rem;
     max-width: 45rem;
     min-height: 20rem;
-    margin-top: 4rem;
+    // margin-top: 4rem;
     left: 0;
     font-family: "Bahij";
     // border: rgb(0, 23, 128) dotted 3px;
@@ -2293,6 +2293,7 @@ body {
     .stat-container2 {
       width: 100%;
       bottom: 0rem;
+      border: #000 1px solid;
     }
   }
   .news-container {
