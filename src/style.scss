@@ -1332,17 +1332,24 @@ body {
   }
 }
 
-////
-
 .header-main {
   // border: 1px red solid;
+  .back-header-image {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: -23rem;
+    left: -15rem;
+    background-image: url("/static/circle.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
   display: grid;
   grid-template-areas: "icons nav logo";
   min-height: 100px;
   align-items: center;
-  // div:hover {
-  //   cursor: pointer;
-  // }
+  position: relative;
+  overflow: hidden;
 
   ///////////////nav test/////////////
 
