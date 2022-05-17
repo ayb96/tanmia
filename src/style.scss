@@ -1217,7 +1217,7 @@ body {
     }
   }
   .prev {
-    left: 100px;
+    left: 6.25rem;
 
     svg {
       // transform: translateX(2px);
@@ -1242,7 +1242,7 @@ body {
     }
   }
   .next {
-    right: 85px;
+    right: 5.3rem;
 
     svg {
       transform: translateX(-2px);
@@ -1339,6 +1339,7 @@ body {
   display: grid;
   grid-template-areas: "icons nav logo";
   min-height: 100px;
+  align-items: center;
   // div:hover {
   //   cursor: pointer;
   // }
@@ -1374,6 +1375,7 @@ body {
   .header-main-sec1 {
     grid-area: logo;
     // border: 1px red solid;
+    height: 50px;
     // width: 3.5rem;
     margin-left: 5rem;
 
@@ -1384,11 +1386,6 @@ body {
       // border: 1px red solid;
       margin-left: 2rem;
     }
-    // .header-icon {
-    //   color: #000000;
-    //   font-size: 1.5rem;
-    //   padding-right: 1rem;
-    // }
   }
   .navbar-section {
     grid-area: nav;
@@ -2027,7 +2024,7 @@ body {
           position: absolute;
           background: url("/static/ellipse8452.png") 0% 0% no-repeat padding-box;
           top: -2rem;
-          right: -2.5rem;
+          right: -2rem;
           z-index: -12;
         }
         .new-image1 {
@@ -2046,7 +2043,7 @@ body {
           color: #ffffff;
           max-height: 9rem;
           font-weight: bold;
-          // margin-right: 2rem;
+          overflow: hidden;
         }
         .new-image2 {
           // border: 1px rgb(17, 0, 255) solid;
@@ -2301,7 +2298,7 @@ body {
       .news-container-sec2 {
         flex-wrap: wrap;
         .news-container-sec21 {
-          width: 87%;
+          width: 100%;
           margin: auto;
         }
         .news-container-sec22 {
@@ -2332,25 +2329,52 @@ body {
 }
 
 @media only screen and (max-width: 520px) {
-  .swiper {
-    .swiper-button-next {
-      // left: ;
+  .arrows {
+    .next {
+      right: 2.3rem;
     }
-    .swiper-button-prev {
+    .prev {
+      right: 19.5rem;
     }
   }
+
   .news-container {
     .news-container-box {
+      .news-container-sec1 {
+        .news-container-box1 {
+          margin-left: 1.7rem;
+        }
+        .news-container-box3 {
+          margin-right: 3rem;
+        }
+      }
       .news-container-sec2 {
         .news-container-sec21 {
           .news-container-info1 {
             .news-container-infoo {
               // background-color: #000000;
-              max-width: 500px;
+              // max-width: 500px;
             }
           }
         }
       }
+    }
+  }
+  .footer {
+    .footer1 {
+      .footer-main {
+        margin-left: 0.4rem;
+        margin-right: 0.4rem;
+      }
+    }
+  }
+
+  .header-main {
+    .header-main-sec1 {
+      margin-left: 2rem;
+    }
+    .header-main-sec3 {
+      margin-right: 2rem;
     }
   }
 }
