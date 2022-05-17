@@ -1068,32 +1068,6 @@ body {
   }
 }
 
-.counter {
-  // position: absolute;
-  // bottom: 30%;
-  // left: 50%;
-  // transform: translateX(-50%);
-  // z-index: 2;
-  // color: rgb(0, 0, 0);
-
-  // &__nbr {
-  //   display: inline-block;
-  //   vertical-align: middle;
-  //   padding: 0 10px;
-
-  //   // font-family: $font-cervo-regular;
-  //   font-size: 13px;
-  //   font-size: 13px;
-  //   font-weight: 400;
-  //   line-height: line-height(13, 42);
-  //   color: $white-100;
-
-  //   &#{&}--yellow {
-  //     color: $vivid-yellow;
-  //   }
-  // }
-}
-
 .view-events,
 .skip-intro {
   z-index: 2;
@@ -1335,6 +1309,7 @@ body {
 .header-main {
   // border: 1px red solid;
   .back-header-image {
+    z-index: -1;
     position: absolute;
     width: 500px;
     height: 500px;
@@ -1392,6 +1367,12 @@ body {
     .search-button {
       // border: 1px red solid;
       margin-left: 2rem;
+    }
+    .search-button:hover {
+      cursor: pointer;
+    }
+    .burger-button:hover {
+      cursor: pointer;
     }
   }
   .navbar-section {
@@ -1897,7 +1878,6 @@ body {
         margin-left: 1rem;
       }
       .news-container-box3 {
-        
         // border: red solid 2px;
         font-size: 4rem;
         font-family: "Ge-dinar";

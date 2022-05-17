@@ -104,7 +104,7 @@
 
 
       <div class="header-main-sec1">
-        <div class="search-button">
+        <a href="" class="search-button">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="27"
@@ -119,9 +119,9 @@
               fill="#252525"
             />
           </svg>
-        </div>
+        </a>
 
-        <a href="" class="burger-button">
+        <div href="" class="burger-button">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="32"
@@ -157,7 +157,7 @@
               />
             </g>
           </svg>
-        </a>
+        </div>
       </div>
     </div>
 
@@ -1124,6 +1124,7 @@
       const bbbb = document.querySelector(".burger-button");
       bbbb.addEventListener("click", () => {
         const navbarLinks = document.getElementsByClassName("navbar-links")[0];
+        console.log("jh");
         navbarLinks.classList.toggle("active");
       });
       function open_pop() {
