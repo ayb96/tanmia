@@ -27,7 +27,7 @@ const timeline = gsap.timeline({ defaults: { duration: 1 } });
 const sliderButton = gsap.timeline({
   paused: "true",
 });
-const ewewefw = document.querySelector(".botton-testing");
+const ewewefw = document.querySelector(".botton-testing2");
 ewewefw.addEventListener("mouseenter", () => {
   console.log("erwerereeg");
   sliderButton.play();
