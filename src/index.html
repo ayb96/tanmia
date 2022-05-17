@@ -24,7 +24,6 @@
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
 
-
     <style></style>
     <title>Tanmia</title>
   </head>
@@ -40,7 +39,6 @@
       <div>
         <div class="swiper-container swiper1">
           <div class="swiper-wrapper">
-   
             <div class="swiper-slide">
               <div class="swiper-slide7"></div>
             </div>
@@ -73,7 +71,6 @@
           <div class="swiper-pagination swiper-pagination1"></div>
         </div>
       </div>
-
     </div>
 
     <!-- Header -->
@@ -84,7 +81,7 @@
       <div class="navbar-links navbar-section">
         <ul>
           <li>
-            <a href="#"> الرئيسية </a>
+            <a href="#" style="color: #01563c"> الرئيسية </a>
           </li>
           <li>
             <a href="/">المشاريع التنموية</a>
@@ -100,8 +97,6 @@
           </li>
         </ul>
       </div>
-
-
 
       <div class="header-main-sec1">
         <a href="" class="search-button">
@@ -169,7 +164,19 @@
           class="cities slideshow screen-height"
           data-js="city-slider"
           data-transition=""
+          style="position: relative"
         >
+          <!-- <div
+            style="
+              background-color: #00000070;
+              position: absolute;
+              z-index: 4;
+              top: 0px;
+              left: 0px;
+              right: 0px;
+              bottom: 0px;
+            "
+          ></div> -->
           <div class="slideshow-inner">
             <div class="cities__slider slides">
               <div class="cities__slide slide is-active">
@@ -190,7 +197,10 @@
                     <div class="botton-testing1"></div>
                     <div class="botton-testing2">
                       <div class="botton-testing2Text">تعرف اكثر</div>
-                      <div class="botton-testing2Icon"></div>
+                      <!-- <i class="fa-solid fa-arrow-left"></i> -->
+                      <div class="botton-testing2Icon">
+                        <i class="fa-solid fa-arrow-left"></i>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -228,7 +238,10 @@
                     <div class="botton-testing1"></div>
                     <div class="botton-testing2">
                       <div class="botton-testing2Text">تعرف اكثر</div>
-                      <div class="botton-testing2Icon"></div>
+                      <!-- <i class="fa-solid fa-arrow-left"></i> -->
+                      <div class="botton-testing2Icon">
+                        <i class="fa-solid fa-arrow-left"></i>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -265,7 +278,10 @@
                     <div class="botton-testing1"></div>
                     <div class="botton-testing2">
                       <div class="botton-testing2Text">تعرف اكثر</div>
-                      <div class="botton-testing2Icon"></div>
+                      <!-- <i class="fa-solid fa-arrow-left"></i> -->
+                      <div class="botton-testing2Icon">
+                        <i class="fa-solid fa-arrow-left"></i>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -428,15 +444,16 @@
             background-size: cover;
             background-position: center;
             position: absolute;
-            top: 0;
-            left: 0;
+            z-index: -109;
+            top: -13rem;
+            left: -5rem;
             background-repeat: no-repeat;
             opacity: 1;
-            transform: translate(0%, -50%);
+            /* transform: translate(0%, -50%); */
           "
         ></div>
 
-        <div class="stat-container33">
+        <a href="" class="stat-container33">
           <svg
             id="Group_189"
             data-name="Group 189"
@@ -463,9 +480,9 @@
               fill="#01563c"
             />
           </svg>
-        </div>
+        </a>
 
-        <div class="stat-container32">
+        <a href="" class="stat-container32">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="52"
@@ -493,9 +510,9 @@
               />
             </g>
           </svg>
-        </div>
+        </a>
 
-        <div class="stat-container31">
+        <a href="" class="stat-container31">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="52"
@@ -527,7 +544,7 @@
               />
             </g>
           </svg>
-        </div>
+        </a>
       </div>
     </div>
 

@@ -1056,6 +1056,8 @@ body {
       width: 50vw;
       overflow: hidden;
       font-family: Ge-dinar;
+      position: relative;
+      z-index: 533;
     }
     .slider-content-2 {
       // border: 2px rgb(21, 255, 0) solid;
@@ -1616,7 +1618,7 @@ body {
   .stat-container3 {
     display: flex;
     position: absolute;
-    bottom: 20rem;
+    bottom: 15rem;
     right: 5rem;
     .stat-container31 {
       margin: 0.5rem;
@@ -1945,7 +1947,7 @@ body {
 
               padding-left: 2px;
               align-self: center;
-              color: #91b5aa;
+              color: #91b59d;
               font-size: 2rem;
             }
           }
@@ -2280,7 +2282,7 @@ body {
     .stat-container2 {
       width: 100%;
       bottom: 0rem;
-      border: #000 1px solid;
+      // border: #000 1px solid;
     }
   }
   .news-container {
@@ -2321,10 +2323,13 @@ body {
 @media only screen and (max-width: 520px) {
   .arrows {
     .next {
-      right: 2.3rem;
+      // right: 2.3rem;
+      display: none;
     }
     .prev {
-      right: 19.5rem;
+      // right: 19.5rem;
+
+      display: none;
     }
   }
 
@@ -3100,14 +3105,14 @@ $grey: #bcbcbc;
 
 .botton-testing {
   margin-top: 30px;
-  width: 100px;
+  width: 150px;
   height: 50px;
   // border: #000000 solid 1px;
   position: relative;
   .botton-testing1 {
     position: absolute;
-    width: 100px;
-    height: 40px;
+    width: 150px;
+    height: 50px;
     border: #fff solid 1px;
     top: -7px;
     left: -7px;
@@ -3119,20 +3124,21 @@ $grey: #bcbcbc;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    height: 40px;
+    width: 150px;
+    height: 50px;
     background-color: white;
-    // border: #000000 solid 1px;
     .botton-testing2Text {
       font-family: Bahij;
+      font-size: 1.5rem;
     }
     .botton-testing2Icon {
-      background-image: url("/static/buttonArrow.svg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      width: 20px;
-      height: 20px;
-      // border: 1px red solid;
+      width: 35px;
+      height: 35px;
+      font-size: 1.7rem;
+      overflow: hidden;
     }
   }
+}
+.botton-testing:hover {
+cursor: pointer;
 }
